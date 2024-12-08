@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6d850d3e-610d-4df2-96e4-d146bd303f6a}</ProjectGuid>
+    <RootNamespace>SortingVisualizer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\maxen\files\pourlelua\lua-5.4.6\src;C:\Users\maxen\files\pourleC++\SFML-2.5.1-sources\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\maxen\files\pourlelua\lua-5.4.6\src;C:\Users\maxen\files\pourleC++\SFML-2.5.1-sources\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BarGraph.cpp" />
+    <ClCompile Include="LuaHelper.cpp" />
+    <ClCompile Include="shuffle\FullShuffle.cpp" />
+    <ClCompile Include="shuffle\LuaShuffleAlgorithm.cpp" />
+    <ClCompile Include="shuffle\ShuffleAlgorithm.cpp" />
+    <ClCompile Include="sorts\bucket\BinaryQuickSort.cpp" />
+    <ClCompile Include="sorts\bucket\BucketSort.cpp" />
+    <ClCompile Include="sorts\bucket\LSDRadixSort.cpp" />
+    <ClCompile Include="sorts\bucket\MSDRadixSort.cpp" />
+    <ClCompile Include="sorts\exchange\BubbleSort.cpp" />
+    <ClCompile Include="sorts\exchange\CircleSort.cpp" />
+    <ClCompile Include="sorts\exchange\CocktailShakerSort.cpp" />
+    <ClCompile Include="sorts\exchange\CombSort.cpp" />
+    <ClCompile Include="sorts\exchange\HybridCombSort.cpp" />
+    <ClCompile Include="sorts\exchange\OddEvenSort.cpp" />
+    <ClCompile Include="sorts\exchange\OptimizedBubbleSort.cpp" />
+    <ClCompile Include="sorts\exchange\OptimizedCocktailShakerSort.cpp" />
+    <ClCompile Include="sorts\impractical\PancakeSort.cpp" />
+    <ClCompile Include="sorts\impractical\SlowSort.cpp" />
+    <ClCompile Include="sorts\impractical\StoogeSort.cpp" />
+    <ClCompile Include="sorts\insertion\BinaryInsertionSort.cpp" />
+    <ClCompile Include="sorts\insertion\InsertionSort.cpp" />
+    <ClCompile Include="sorts\insertion\ShellSort.cpp" />
+    <ClCompile Include="sorts\merge\InPlaceMergeSort.cpp" />
+    <ClCompile Include="sorts\merge\IterativeMergeSort.cpp" />
+    <ClCompile Include="sorts\merge\MergeSort.cpp" />
+    <ClCompile Include="sorts\merge\RotateMergeSort.cpp" />
+    <ClCompile Include="sorts\merge\TimSort.cpp" />
+    <ClCompile Include="sorts\merge\WeaveSort.cpp" />
+    <ClCompile Include="sorts\misc\LuaSortingAlgorithm.cpp" />
+    <ClCompile Include="sorts\misc\SortingAlgorithm.cpp" />
+    <ClCompile Include="sorts\misc\SortingHelpers.cpp" />
+    <ClCompile Include="sorts\network\BitonicSort.cpp" />
+    <ClCompile Include="sorts\network\OddEvenMergeSort.cpp" />
+    <ClCompile Include="sorts\network\PairwiseSortingNetwork.cpp" />
+    <ClCompile Include="sorts\quick\DualPivotQuickSort.cpp" />
+    <ClCompile Include="sorts\quick\IntroSort.cpp" />
+    <ClCompile Include="sorts\quick\PatternDefeatingQuickSort.cpp" />
+    <ClCompile Include="sorts\quick\ProportionExtendSort.cpp" />
+    <ClCompile Include="sorts\quick\QuickSort.cpp" />
+    <ClCompile Include="sorts\quick\QuickSortLL.cpp" />
+    <ClCompile Include="sorts\selection\CycleSort.cpp" />
+    <ClCompile Include="sorts\selection\DoubleSelectionSort.cpp" />
+    <ClCompile Include="sorts\selection\ExchangeSort.cpp" />
+    <ClCompile Include="sorts\selection\HeapSort.cpp" />
+    <ClCompile Include="sorts\selection\MinHeapSort.cpp" />
+    <ClCompile Include="sorts\selection\PoplarSort.cpp" />
+    <ClCompile Include="sorts\selection\SelectionSort.cpp" />
+    <ClCompile Include="sorts\selection\SmoothSort.cpp" />
+    <ClCompile Include="sorts\selection\WeakHeapSort.cpp" />
+    <ClCompile Include="SortVisualizer.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="VisualizerScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BarGraph.h" />
+    <ClInclude Include="LuaHelper.h" />
+    <ClInclude Include="shuffle\FullShuffle.h" />
+    <ClInclude Include="shuffle\LuaShuffleAlgorithm.h" />
+    <ClInclude Include="shuffle\ShuffleAlgorithm.h" />
+    <ClInclude Include="sorts\AllSortingAlgorithms.h" />
+    <ClInclude Include="sorts\bucket\BinaryQuickSort.h" />
+    <ClInclude Include="sorts\bucket\BucketSort.h" />
+    <ClInclude Include="sorts\bucket\LSDRadixSort.h" />
+    <ClInclude Include="sorts\bucket\MSDRadixSort.h" />
+    <ClInclude Include="sorts\exchange\BubbleSort.h" />
+    <ClInclude Include="sorts\exchange\CircleSort.h" />
+    <ClInclude Include="sorts\exchange\CocktailShakerSort.h" />
+    <ClInclude Include="sorts\exchange\CombSort.h" />
+    <ClInclude Include="sorts\exchange\HybridCombSort.h" />
+    <ClInclude Include="sorts\exchange\OddEvenSort.h" />
+    <ClInclude Include="sorts\exchange\OptimizedBubbleSort.h" />
+    <ClInclude Include="sorts\exchange\OptimizedCocktailShakerSort.h" />
+    <ClInclude Include="sorts\impractical\PancakeSort.h" />
+    <ClInclude Include="sorts\impractical\SlowSort.h" />
+    <ClInclude Include="sorts\impractical\StoogeSort.h" />
+    <ClInclude Include="sorts\insertion\BinaryInsertionSort.h" />
+    <ClInclude Include="sorts\insertion\InsertionSort.h" />
+    <ClInclude Include="sorts\insertion\ShellSort.h" />
+    <ClInclude Include="sorts\merge\InPlaceMergeSort.h" />
+    <ClInclude Include="sorts\merge\IterativeMergeSort.h" />
+    <ClInclude Include="sorts\merge\MergeSort.h" />
+    <ClInclude Include="sorts\merge\RotateMergeSort.h" />
+    <ClInclude Include="sorts\merge\TimSort.h" />
+    <ClInclude Include="sorts\merge\WeaveSort.h" />
+    <ClInclude Include="sorts\misc\LuaSortingAlgorithm.h" />
+    <ClInclude Include="sorts\misc\SampleArray.h" />
+    <ClInclude Include="sorts\misc\SortingAlgorithm.h" />
+    <ClInclude Include="sorts\misc\SortingHelpers.h" />
+    <ClInclude Include="sorts\network\BitonicSort.h" />
+    <ClInclude Include="sorts\network\OddEvenMergeSort.h" />
+    <ClInclude Include="sorts\network\PairwiseSortingNetwork.h" />
+    <ClInclude Include="sorts\quick\DualPivotQuickSort.h" />
+    <ClInclude Include="sorts\quick\IntroSort.h" />
+    <ClInclude Include="sorts\quick\PatternDefeatingQuickSort.h" />
+    <ClInclude Include="sorts\quick\ProportionExtendSort.h" />
+    <ClInclude Include="sorts\quick\QuickSort.h" />
+    <ClInclude Include="sorts\quick\QuickSortLL.h" />
+    <ClInclude Include="sorts\selection\CycleSort.h" />
+    <ClInclude Include="sorts\selection\DoubleSelectionSort.h" />
+    <ClInclude Include="sorts\selection\ExchangeSort.h" />
+    <ClInclude Include="sorts\selection\HeapSort.h" />
+    <ClInclude Include="sorts\selection\MinHeapSort.h" />
+    <ClInclude Include="sorts\selection\PoplarSort.h" />
+    <ClInclude Include="sorts\selection\SelectionSort.h" />
+    <ClInclude Include="sorts\selection\SmoothSort.h" />
+    <ClInclude Include="sorts\selection\WeakHeapSort.h" />
+    <ClInclude Include="SortVisualizer.h" />
+    <ClInclude Include="VisualizerScreen.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
