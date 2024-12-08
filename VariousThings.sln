@@ -3,15 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariousThings", "VariousThings\VariousThings.csproj", "{FABE932F-9783-4C86-8E56-B994C8C5A880}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VariousNative", "VariousNative\VariousNative.vcxproj", "{D0FA48BB-0064-4215-80C9-A3DF5F95174E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E} = {6A9D4910-0462-4068-BA04-E9E3C9EF918E}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VariousCUDA", "VariousCUDA\VariousCUDA.vcxproj", "{6A9D4910-0462-4068-BA04-E9E3C9EF918E}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingVisualizer", "SortingVisualizer\SortingVisualizer.vcxproj", "{6D850D3E-610D-4DF2-96E4-D146BD303F6A}"
 EndProject
 Global
@@ -24,42 +15,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Debug|x64.Build.0 = Debug|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Debug|x86.Build.0 = Debug|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Release|x64.ActiveCfg = Release|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Release|x64.Build.0 = Release|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Release|x86.ActiveCfg = Release|Any CPU
-		{FABE932F-9783-4C86-8E56-B994C8C5A880}.Release|x86.Build.0 = Release|Any CPU
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Debug|Any CPU.Build.0 = Debug|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Debug|x64.ActiveCfg = Debug|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Debug|x64.Build.0 = Debug|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Debug|x86.ActiveCfg = Debug|Win32
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Debug|x86.Build.0 = Debug|Win32
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Release|Any CPU.ActiveCfg = Release|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Release|Any CPU.Build.0 = Release|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Release|x64.ActiveCfg = Release|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Release|x64.Build.0 = Release|x64
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Release|x86.ActiveCfg = Release|Win32
-		{D0FA48BB-0064-4215-80C9-A3DF5F95174E}.Release|x86.Build.0 = Release|Win32
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Debug|Any CPU.Build.0 = Debug|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Debug|x64.ActiveCfg = Debug|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Debug|x64.Build.0 = Debug|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Debug|x86.ActiveCfg = Debug|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Debug|x86.Build.0 = Debug|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Release|Any CPU.ActiveCfg = Release|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Release|Any CPU.Build.0 = Release|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Release|x64.ActiveCfg = Release|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Release|x64.Build.0 = Release|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Release|x86.ActiveCfg = Release|x64
-		{6A9D4910-0462-4068-BA04-E9E3C9EF918E}.Release|x86.Build.0 = Release|x64
 		{6D850D3E-610D-4DF2-96E4-D146BD303F6A}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{6D850D3E-610D-4DF2-96E4-D146BD303F6A}.Debug|Any CPU.Build.0 = Debug|x64
 		{6D850D3E-610D-4DF2-96E4-D146BD303F6A}.Debug|x64.ActiveCfg = Debug|x64
