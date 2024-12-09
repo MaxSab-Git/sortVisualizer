@@ -11,6 +11,5 @@ namespace sv
 		void shuffle(SortVisualizer& visualizer) override;
 
 	private:
-		float m_timeMultiplier;
 	};
 }
