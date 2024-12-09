@@ -138,11 +138,14 @@ int sv::LuaHelper::vWrite(lua_State* L)
 		lua_Integer value = luaL_checkinteger(L, 2);
 
 		luaL_argcheck(L, 1 <= index && visualizer->getArrayLength() >= index, 1, "'index' out of range");
+		luaL_argcheck(L, value >= 0 && value <= visualizer->getArrayLength(), 2, "'index' out of range");
 
 		sv::VisualOperation::ArrayAccess access = sv::VisualOperation::ArrayAccess::Main;
 		if (lua_isstring(L, 3))
 		{
 			access = strToArrayAccess(lua_tostring(L, 3));
+
+			if (sv::VisualOperation::ArrayAccess::Aux != access) access = sv::VisualOperation::ArrayAccess::Main;
 		}
 
 		lua_pushboolean(L, visualizer->visualizerWrite(index - 1, value, access));
@@ -185,7 +188,7 @@ int sv::LuaHelper::vCreateAuxiliaryArray(lua_State* L)
 	{
 		lua_Integer size = luaL_checkinteger(L, 1);
 
-		luaL_argcheck(L, size >= 0, 1, "'size' should be >= 0");
+		luaL_argcheck(L, size >= 0 && visualizer->getArrayLength() >= size, 1, "'size' should be >= 0");
 
 		visualizer->createAuxiliaryArray(size);
 	}
