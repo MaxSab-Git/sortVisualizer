@@ -40,11 +40,15 @@ run the executable corresponding to your system.
 
 ## Controls
 
+These controls are for AZERTY keyboard, so that may change if you use QWERTY.
+
 * press right and left arrow to switch algorithm.<br>
 * press up and down arrow to increase or decrease array size by factor of 2.<br>
 * press enter to launch the algorithm and press escape to stop it.<br>
 * press A to switch between sorting algorithms and additional sorting algorithms (implemented in Lua, can be found in the "additionalSort/" folder).<br>
 * press Tab to open the task menu where you can choose a task to launch (implemented in Lua, can be found in the "task/" folder).<br>
+* press D to switch between step by step mode and normal mode, press enter to make a step in step by step mode.
+* press 1 to toggle visualisation of auxiliary array.
 
 ## Additional sorting algorithms and task list
 
