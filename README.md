@@ -55,6 +55,10 @@ These controls are for AZERTY keyboard, so that may change if you use QWERTY.
 * additional sorting algorithms and task list are updated at launch, so if you have created or deleted a lua file, restart the application for the changes to take effect.
 * Change in these files don't need application restart.
 
+## Additional note
+
+* Cycle sort have a bug causing to not sort correctly reversed list.
+
 # Implementing your own additional sorting algorithms and task in lua
 
 * If you want to implementing your own additional sorting algorithms and tasks in lua, you can check respectively the "additionalSort/" and "task/demo/" folders.<br>
