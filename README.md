@@ -12,7 +12,7 @@ To compile, open solution in Visual Studio (2022 is used for this project) and c
 
 ## For other systems
 
-Same as windows but you should compile and/or use your own precompiled version of SFML (2.5.1) and Lua (2.4.6) in x64 and edit linker entry property (not sure if it's so simple but i hope it work).
+Same as windows but you should compile and/or use your own precompiled version of SFML (2.5.1) and Lua (5.4.6) in x64 and edit linker entry property (not sure if it's so simple but i hope it work).
 
 # Important note after compilation
 
