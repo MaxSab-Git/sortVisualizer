@@ -138,7 +138,7 @@ int sv::LuaHelper::vWrite(lua_State* L)
 		lua_Integer value = luaL_checkinteger(L, 2);
 
 		luaL_argcheck(L, 1 <= index && visualizer->getArrayLength() >= index, 1, "'index' out of range");
-		luaL_argcheck(L, value >= 0 && value <= visualizer->getArrayLength(), 2, "'index' out of range");
+		luaL_argcheck(L, value >= 0 && value <= visualizer->getArrayLength(), 2, "'value' is invalid");
 
 		sv::VisualOperation::ArrayAccess access = sv::VisualOperation::ArrayAccess::Main;
 		if (lua_isstring(L, 3))

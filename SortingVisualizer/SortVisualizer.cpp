@@ -21,7 +21,6 @@ namespace sv
 		m_dirtyHighlight(false)
 	{
 		m_barGraph.setPlaySound(true);
-
 	}
 
 	SortVisualizer::~SortVisualizer()
@@ -170,14 +169,14 @@ namespace sv
 		switch (access)
 		{
 		case sv::VisualOperation::ArrayAccess::Main:
-			if (index < m_arrayLenght)
+			if (index < m_arrayLenght && val <= m_barGraph.getMaxValue())
 			{
 				m_array[index] = val;
 				goto insertOperation;
 			}
 			break;
 		case sv::VisualOperation::ArrayAccess::Aux:
-			if (index < m_auxArrayLenght)
+			if (index < m_auxArrayLenght && val <= m_auxBarGraph.getMaxValue())
 			{
 				m_auxArray[index] = val;
 				goto insertOperation;

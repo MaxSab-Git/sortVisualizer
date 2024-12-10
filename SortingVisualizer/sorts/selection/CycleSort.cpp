@@ -30,7 +30,7 @@ void sv::CycleSort::sort(SortVisualizer& visualizer)
 
         while (i != lessCounter)
         {
-            if (!visualizer.visualizerCompare(lessCounter - 1, i, result, SortVisualizer::equals)) return;
+            if (!visualizer.visualizerCompare(lessCounter, i, result, SortVisualizer::equals)) return;
             if (result) lessCounter--;
             else break;
         }
