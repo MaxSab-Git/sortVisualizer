@@ -30,7 +30,7 @@ You can download the Release precompiled binaries instead if you are on windows.
 
 ## Windows
 
-run SortingVisuaulizer.exe.
+run SortingVisualizer.exe.
 
 ## Other systems
 
